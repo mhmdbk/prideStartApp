@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		30B2315B1CA6214530E20426 /* Pods_PideStarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA61D4FB4AF4118DE415CF9 /* Pods_PideStarApp.framework */; };
+		F6102C2E2616371200678B5C /* UITableView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6102C2D2616371200678B5C /* UITableView + Extensions.swift */; };
+		F6102C322616372E00678B5C /* ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6102C312616372E00678B5C /* ClassName.swift */; };
+		F6102C352616374000678B5C /* UICollectionView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6102C342616374000678B5C /* UICollectionView + Extensions.swift */; };
+		F6102C392616393500678B5C /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6102C372616393500678B5C /* StoriesTableViewCell.swift */; };
+		F6102C3A2616393500678B5C /* StoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6102C382616393500678B5C /* StoriesTableViewCell.xib */; };
+		F6102C3E261644D600678B5C /* UILabel + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6102C3D261644D600678B5C /* UILabel + Extensions.swift */; };
 		F6AF8F6626140D8100F13CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF8F6526140D8100F13CF8 /* AppDelegate.swift */; };
 		F6AF8F6826140D8100F13CF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF8F6726140D8100F13CF8 /* SceneDelegate.swift */; };
 		F6AF8F6D26140D8100F13CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AF8F6B26140D8100F13CF8 /* Main.storyboard */; };
@@ -28,6 +34,12 @@
 		67EBBAF1BC35A4989CDD5F9B /* Pods-PideStarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PideStarApp.release.xcconfig"; path = "Target Support Files/Pods-PideStarApp/Pods-PideStarApp.release.xcconfig"; sourceTree = "<group>"; };
 		8FA61D4FB4AF4118DE415CF9 /* Pods_PideStarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PideStarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFD2C9C3012C79BD2FCA07A /* Pods-PideStarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PideStarApp.debug.xcconfig"; path = "Target Support Files/Pods-PideStarApp/Pods-PideStarApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F6102C2D2616371200678B5C /* UITableView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView + Extensions.swift"; sourceTree = "<group>"; };
+		F6102C312616372E00678B5C /* ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassName.swift; sourceTree = "<group>"; };
+		F6102C342616374000678B5C /* UICollectionView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Extensions.swift"; sourceTree = "<group>"; };
+		F6102C372616393500678B5C /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
+		F6102C382616393500678B5C /* StoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesTableViewCell.xib; sourceTree = "<group>"; };
+		F6102C3D261644D600678B5C /* UILabel + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extensions.swift"; sourceTree = "<group>"; };
 		F6AF8F6226140D8100F13CF8 /* PideStarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PideStarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6AF8F6526140D8100F13CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6AF8F6726140D8100F13CF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +87,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F6102C2C2616370500678B5C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6102C2D2616371200678B5C /* UITableView + Extensions.swift */,
+				F6102C342616374000678B5C /* UICollectionView + Extensions.swift */,
+				F6102C3D261644D600678B5C /* UILabel + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F6102C302616372500678B5C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F6102C312616372E00678B5C /* ClassName.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		F6AF8F5926140D8100F13CF8 = {
 			isa = PBXGroup;
 			children = (
@@ -96,14 +126,14 @@
 		F6AF8F6426140D8100F13CF8 /* PideStarApp */ = {
 			isa = PBXGroup;
 			children = (
+				F6AF8F7626140D8200F13CF8 /* Info.plist */,
 				F6AF8F7E261412C800F13CF8 /* Application */,
+				F6102C302616372500678B5C /* Protocols */,
 				F6AF8F8B261414F800F13CF8 /* Services */,
 				F6AF8F7F2614139000F13CF8 /* Flows */,
+				F6102C2C2616370500678B5C /* Extensions */,
 				F6AF8FAB2614FFFE00F13CF8 /* Models */,
 				F6AF8F842614149900F13CF8 /* Utilities */,
-				F6AF8F7326140D8200F13CF8 /* LaunchScreen.storyboard */,
-				F6AF8F7626140D8200F13CF8 /* Info.plist */,
-				F6AF8F6E26140D8100F13CF8 /* PideStarApp.xcdatamodeld */,
 			);
 			path = PideStarApp;
 			sourceTree = "<group>";
@@ -111,6 +141,8 @@
 		F6AF8F7E261412C800F13CF8 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F6AF8F6E26140D8100F13CF8 /* PideStarApp.xcdatamodeld */,
+				F6AF8F7326140D8200F13CF8 /* LaunchScreen.storyboard */,
 				F6AF8F7126140D8200F13CF8 /* Assets.xcassets */,
 				F6AF8F6526140D8100F13CF8 /* AppDelegate.swift */,
 				F6AF8F6726140D8100F13CF8 /* SceneDelegate.swift */,
@@ -121,7 +153,7 @@
 		F6AF8F7F2614139000F13CF8 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				F6AF8F82261413EB00F13CF8 /* StoriesDetails */,
+				F6AF8F82261413EB00F13CF8 /* StoriesTableViewCell */,
 				F6AF8F802614139500F13CF8 /* AppMainFlow */,
 			);
 			path = Flows;
@@ -137,11 +169,13 @@
 			path = AppMainFlow;
 			sourceTree = "<group>";
 		};
-		F6AF8F82261413EB00F13CF8 /* StoriesDetails */ = {
+		F6AF8F82261413EB00F13CF8 /* StoriesTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				F6102C372616393500678B5C /* StoriesTableViewCell.swift */,
+				F6102C382616393500678B5C /* StoriesTableViewCell.xib */,
 			);
-			path = StoriesDetails;
+			path = StoriesTableViewCell;
 			sourceTree = "<group>";
 		};
 		F6AF8F842614149900F13CF8 /* Utilities */ = {
@@ -231,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6AF8F7526140D8200F13CF8 /* LaunchScreen.storyboard in Resources */,
+				F6102C3A2616393500678B5C /* StoriesTableViewCell.xib in Resources */,
 				F6AF8F7226140D8200F13CF8 /* Assets.xcassets in Resources */,
 				F6AF8F6D26140D8100F13CF8 /* Main.storyboard in Resources */,
 			);
@@ -287,14 +322,19 @@
 			files = (
 				F6AF8FB72615084A00F13CF8 /* TopStoriesViewController.swift in Sources */,
 				F6AF8FA32614EAAD00F13CF8 /* AppNetworkService.swift in Sources */,
+				F6102C392616393500678B5C /* StoriesTableViewCell.swift in Sources */,
 				F6AF8F7026140D8100F13CF8 /* PideStarApp.xcdatamodeld in Sources */,
 				F6AF8FB12615005C00F13CF8 /* TopStoriesHome.swift in Sources */,
 				F6AF8F882614149900F13CF8 /* Fonts.swift in Sources */,
+				F6102C2E2616371200678B5C /* UITableView + Extensions.swift in Sources */,
 				F6AF8FAF2615005C00F13CF8 /* Results.swift in Sources */,
 				F6AF8FBA2615086200F13CF8 /* BookMarksViewController.swift in Sources */,
+				F6102C322616372E00678B5C /* ClassName.swift in Sources */,
 				F6AF8F6626140D8100F13CF8 /* AppDelegate.swift in Sources */,
 				F6AF8F6826140D8100F13CF8 /* SceneDelegate.swift in Sources */,
 				F6AF8FB02615005C00F13CF8 /* Multimedia.swift in Sources */,
+				F6102C352616374000678B5C /* UICollectionView + Extensions.swift in Sources */,
+				F6102C3E261644D600678B5C /* UILabel + Extensions.swift in Sources */,
 				F6AF8F8D2614154700F13CF8 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37945PW3G6;
 				INFOPLIST_FILE = PideStarApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37945PW3G6;
 				INFOPLIST_FILE = PideStarApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

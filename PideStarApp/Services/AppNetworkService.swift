@@ -4,7 +4,6 @@
 import Foundation
 import Moya
 
-
 private let BASE_URL : String = "https://api.nytimes.com/svc/"
 private let apikey = "bIi7mEAUBC0INm5PqIwilbUZWMzS9VyJ"
 

@@ -9,6 +9,5 @@ target 'PideStarApp' do
 
   pod 'SDWebImage', '~> 5.0'
   pod 'Moya', '~> 13.0'
-
-
+  pod 'SkeletonView' 
 end

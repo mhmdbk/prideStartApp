@@ -27,14 +27,29 @@
         <!--Top stories-->
         <scene sceneID="GkZ-0q-p4E">
             <objects>
-                <viewController id="MLK-KR-c98" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopStoriesViewController" id="MLK-KR-c98" customClass="TopStoriesViewController" customModule="PideStarApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jet-kL-UZ7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aHs-8O-Aom">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jf4-Kx-3fi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jf4-Kx-3fi" firstAttribute="bottom" secondItem="aHs-8O-Aom" secondAttribute="bottom" id="8fg-Xy-FPn"/>
+                            <constraint firstItem="aHs-8O-Aom" firstAttribute="leading" secondItem="jf4-Kx-3fi" secondAttribute="leading" id="O94-8s-127"/>
+                            <constraint firstItem="aHs-8O-Aom" firstAttribute="top" secondItem="jf4-Kx-3fi" secondAttribute="top" id="ny3-fX-VKU"/>
+                            <constraint firstItem="jf4-Kx-3fi" firstAttribute="trailing" secondItem="aHs-8O-Aom" secondAttribute="trailing" id="yBa-3L-g9y"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Top stories" image="story" id="8Se-wd-K9l"/>
+                    <connections>
+                        <outlet property="storiesTableView" destination="aHs-8O-Aom" id="Rhl-hn-sIW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kS8-Qe-XdP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,7 +13,7 @@ class APIClient : NSObject {
     static let shared = APIClient() //singelton pattern so no other class can initialize
     let provider = MoyaProvider<AppNetworkService>()
     
-func getCharacters(withCompletionHandler completionHandler: @escaping (Result<TopStoriesHome,Error>) -> ()) {
+func getTopStories(withCompletionHandler completionHandler: @escaping (Result<TopStoriesHome,Error>) -> ()) {
     provider.request(.getTopStories) { result in
         switch result {
         case let .success(moyaResponnse):
