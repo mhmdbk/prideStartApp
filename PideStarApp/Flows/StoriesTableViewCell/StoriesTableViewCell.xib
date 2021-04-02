@@ -18,12 +18,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="446" height="359"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cPs-4V-S7N">
-                        <rect key="frame" x="0.0" y="12" width="446" height="197"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
-                        </userDefinedRuntimeAttributes>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxx-xB-j0L">
                         <rect key="frame" x="32" y="229" width="382" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -62,22 +56,30 @@
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         <dataDetectorType key="dataDetectorTypes" link="YES"/>
                     </textView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cPs-4V-S7N">
+                        <rect key="frame" x="98" y="10" width="250" height="199"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="Qkn-EQ-G6I"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="bxx-xB-j0L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="1Ug-R4-gQR"/>
                     <constraint firstAttribute="bottom" secondItem="HQo-MP-zgO" secondAttribute="bottom" constant="20" id="3TM-79-cYA"/>
+                    <constraint firstItem="bxx-xB-j0L" firstAttribute="top" secondItem="cPs-4V-S7N" secondAttribute="bottom" constant="20" id="7s6-MS-0sA"/>
                     <constraint firstAttribute="trailing" secondItem="HQo-MP-zgO" secondAttribute="trailing" constant="32" id="8wC-gh-9m1"/>
-                    <constraint firstItem="cPs-4V-S7N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="9d8-JH-6tO"/>
-                    <constraint firstItem="bxx-xB-j0L" firstAttribute="top" secondItem="cPs-4V-S7N" secondAttribute="bottom" constant="20" id="CZ0-jM-ecx"/>
-                    <constraint firstAttribute="trailing" secondItem="cPs-4V-S7N" secondAttribute="trailing" id="CvX-CT-Pbe"/>
                     <constraint firstItem="HQo-MP-zgO" firstAttribute="top" secondItem="Pqv-IP-4o4" secondAttribute="bottom" constant="20" id="DTX-6O-zPG"/>
                     <constraint firstItem="Pqv-IP-4o4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="F6r-jL-D1L"/>
                     <constraint firstItem="6rU-Os-ged" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="NaS-vb-cfE"/>
+                    <constraint firstItem="cPs-4V-S7N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Sge-nG-nec"/>
                     <constraint firstAttribute="trailing" secondItem="6rU-Os-ged" secondAttribute="trailing" constant="32" id="Tqh-nV-tQ1"/>
                     <constraint firstAttribute="trailing" secondItem="Pqv-IP-4o4" secondAttribute="trailing" constant="32" id="YZh-HF-0ed"/>
                     <constraint firstAttribute="trailing" secondItem="bxx-xB-j0L" secondAttribute="trailing" constant="32" id="Z5c-Dz-aTQ"/>
                     <constraint firstItem="HQo-MP-zgO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="be0-a0-Ztj"/>
-                    <constraint firstItem="cPs-4V-S7N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cqX-ax-DuJ"/>
+                    <constraint firstItem="cPs-4V-S7N" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gxO-O4-szA"/>
                     <constraint firstItem="6rU-Os-ged" firstAttribute="top" secondItem="bxx-xB-j0L" secondAttribute="bottom" constant="20" id="lWM-qX-5jG"/>
                     <constraint firstItem="Pqv-IP-4o4" firstAttribute="top" secondItem="6rU-Os-ged" secondAttribute="bottom" constant="20" id="rqc-un-KTR"/>
                 </constraints>
