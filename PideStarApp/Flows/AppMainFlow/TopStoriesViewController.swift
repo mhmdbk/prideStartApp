@@ -17,7 +17,7 @@ class TopStoriesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initialSetups() 
+        initialSetups()
         
     }
     
@@ -50,7 +50,7 @@ class TopStoriesViewController: UIViewController {
 
 extension TopStoriesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 450
+        return 500
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -109,7 +109,7 @@ extension TopStoriesViewController: UITableViewDelegate {
 extension TopStoriesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //for better user experience,in case list not returned yet from server we will show animatedGradientSkeleton
-        return storiesList?.count ?? 10
+        return storiesList?.count ?? 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

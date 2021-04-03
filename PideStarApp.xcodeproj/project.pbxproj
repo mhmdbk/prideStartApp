@@ -14,6 +14,9 @@
 		F6102C392616393500678B5C /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6102C372616393500678B5C /* StoriesTableViewCell.swift */; };
 		F6102C3A2616393500678B5C /* StoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6102C382616393500678B5C /* StoriesTableViewCell.xib */; };
 		F6102C3E261644D600678B5C /* UILabel + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6102C3D261644D600678B5C /* UILabel + Extensions.swift */; };
+		F6140E582617DF020019C7D6 /* BookmarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6140E562617DF010019C7D6 /* BookmarkCollectionViewCell.swift */; };
+		F6140E592617DF020019C7D6 /* BookmarkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6140E572617DF010019C7D6 /* BookmarkCollectionViewCell.xib */; };
+		F6140E5C2617E5640019C7D6 /* FavoriteStoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6140E5B2617E5640019C7D6 /* FavoriteStoryList.swift */; };
 		F6AF8F6626140D8100F13CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF8F6526140D8100F13CF8 /* AppDelegate.swift */; };
 		F6AF8F6826140D8100F13CF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF8F6726140D8100F13CF8 /* SceneDelegate.swift */; };
 		F6AF8F6D26140D8100F13CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AF8F6B26140D8100F13CF8 /* Main.storyboard */; };
@@ -40,6 +43,9 @@
 		F6102C372616393500678B5C /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
 		F6102C382616393500678B5C /* StoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesTableViewCell.xib; sourceTree = "<group>"; };
 		F6102C3D261644D600678B5C /* UILabel + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extensions.swift"; sourceTree = "<group>"; };
+		F6140E562617DF010019C7D6 /* BookmarkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6140E572617DF010019C7D6 /* BookmarkCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookmarkCollectionViewCell.xib; sourceTree = "<group>"; };
+		F6140E5B2617E5640019C7D6 /* FavoriteStoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStoryList.swift; sourceTree = "<group>"; };
 		F6AF8F6226140D8100F13CF8 /* PideStarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PideStarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6AF8F6526140D8100F13CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6AF8F6726140D8100F13CF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +111,15 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		F6140E552617DEE40019C7D6 /* BookmarkCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F6140E562617DF010019C7D6 /* BookmarkCollectionViewCell.swift */,
+				F6140E572617DF010019C7D6 /* BookmarkCollectionViewCell.xib */,
+			);
+			path = BookmarkCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		F6AF8F5926140D8100F13CF8 = {
 			isa = PBXGroup;
 			children = (
@@ -128,11 +143,11 @@
 			children = (
 				F6AF8F7626140D8200F13CF8 /* Info.plist */,
 				F6AF8F7E261412C800F13CF8 /* Application */,
-				F6102C302616372500678B5C /* Protocols */,
 				F6AF8F8B261414F800F13CF8 /* Services */,
 				F6AF8F7F2614139000F13CF8 /* Flows */,
-				F6102C2C2616370500678B5C /* Extensions */,
 				F6AF8FAB2614FFFE00F13CF8 /* Models */,
+				F6102C2C2616370500678B5C /* Extensions */,
+				F6102C302616372500678B5C /* Protocols */,
 				F6AF8F842614149900F13CF8 /* Utilities */,
 			);
 			path = PideStarApp;
@@ -153,6 +168,7 @@
 		F6AF8F7F2614139000F13CF8 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				F6140E552617DEE40019C7D6 /* BookmarkCollectionViewCell */,
 				F6AF8F82261413EB00F13CF8 /* StoriesTableViewCell */,
 				F6AF8F802614139500F13CF8 /* AppMainFlow */,
 			);
@@ -201,6 +217,7 @@
 				F6AF8FAE2615005C00F13CF8 /* TopStoriesHome.swift */,
 				F6AF8FAD2615005C00F13CF8 /* Multimedia.swift */,
 				F6AF8FAC2615005C00F13CF8 /* Results.swift */,
+				F6140E5B2617E5640019C7D6 /* FavoriteStoryList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,6 +283,7 @@
 			files = (
 				F6AF8F7526140D8200F13CF8 /* LaunchScreen.storyboard in Resources */,
 				F6102C3A2616393500678B5C /* StoriesTableViewCell.xib in Resources */,
+				F6140E592617DF020019C7D6 /* BookmarkCollectionViewCell.xib in Resources */,
 				F6AF8F7226140D8200F13CF8 /* Assets.xcassets in Resources */,
 				F6AF8F6D26140D8100F13CF8 /* Main.storyboard in Resources */,
 			);
@@ -330,11 +348,13 @@
 				F6AF8FAF2615005C00F13CF8 /* Results.swift in Sources */,
 				F6AF8FBA2615086200F13CF8 /* BookMarksViewController.swift in Sources */,
 				F6102C322616372E00678B5C /* ClassName.swift in Sources */,
+				F6140E5C2617E5640019C7D6 /* FavoriteStoryList.swift in Sources */,
 				F6AF8F6626140D8100F13CF8 /* AppDelegate.swift in Sources */,
 				F6AF8F6826140D8100F13CF8 /* SceneDelegate.swift in Sources */,
 				F6AF8FB02615005C00F13CF8 /* Multimedia.swift in Sources */,
 				F6102C352616374000678B5C /* UICollectionView + Extensions.swift in Sources */,
 				F6102C3E261644D600678B5C /* UILabel + Extensions.swift in Sources */,
+				F6140E582617DF020019C7D6 /* BookmarkCollectionViewCell.swift in Sources */,
 				F6AF8F8D2614154700F13CF8 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

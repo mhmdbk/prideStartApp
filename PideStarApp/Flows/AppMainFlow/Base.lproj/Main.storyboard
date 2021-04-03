@@ -16,10 +16,32 @@
                     <view key="view" contentMode="scaleToFill" id="K4F-C0-ibR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KgE-PC-h3q">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="d1E-Zh-Isb">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ZgG-cT-X0f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KgE-PC-h3q" firstAttribute="leading" secondItem="ZgG-cT-X0f" secondAttribute="leading" id="UMG-nL-FKv"/>
+                            <constraint firstItem="ZgG-cT-X0f" firstAttribute="bottom" secondItem="KgE-PC-h3q" secondAttribute="bottom" id="Uud-1c-iZ9"/>
+                            <constraint firstItem="KgE-PC-h3q" firstAttribute="top" secondItem="ZgG-cT-X0f" secondAttribute="top" id="d2s-dr-Uqx"/>
+                            <constraint firstItem="ZgG-cT-X0f" firstAttribute="trailing" secondItem="KgE-PC-h3q" secondAttribute="trailing" id="sE8-rS-kSE"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bookmarks" image="bookmark" id="DrY-PC-0hA"/>
+                    <connections>
+                        <outlet property="bookmarksCollectionView" destination="KgE-PC-h3q" id="lsv-hQ-dDU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHK-c1-LkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
