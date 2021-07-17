@@ -22,6 +22,7 @@ func getTopStories(withCompletionHandler completionHandler: @escaping (Result<To
             
         case .failure(let error):
             completionHandler(.failure(error))
+            print(error.errorDescription)
         }
     }
     }
